@@ -37,8 +37,4 @@ public class UserController {
         return userService.findUserByEmail(email);
     }
 
-    @DeleteMapping("/cancel/{id}")
-    public List<User> cancelRegistration(@PathVariable int id) {
-        return userService.cancelRegistration(id);
-    }
 }
